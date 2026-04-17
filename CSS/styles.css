@@ -1,3 +1,115 @@
-.prueba {
-    background-color: red;
+#empresa {
+    background-color: #f4f9f4;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 8px 30px rgba(45, 106, 79, 0.06);
+    color: #3e5043;
+    border: 1px solid #e6efe6;
+}
+
+#empresa h2,
+#empresa h3 {
+    color: #2d6a4f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#empresa h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+#empresa h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #52b788;
+    margin: 15px auto 0;
+    border-radius: 4px;
+}
+
+#empresa h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e6efe6;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+#empresa p {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+#empresa ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#empresa ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+
+#empresa ul li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.1rem;
+}
+
+#empresa img {
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+#empresa img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(45, 106, 79, 0.15);
+}
+
+.contenedor-mapa {
+    background-color: #e6efe6;
+    border-radius: 12px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #52b788;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 2px dashed #95d5b2;
+    margin-top: 1rem;
+}
+
+#empresa strong {
+    color: #1b4332;
+    font-weight: 600;
+}
+
+/* Ajustes para teléfonos */
+@media (max-width: 768px) {
+    #empresa {
+        padding: 2rem 1rem;
+    }
+
+    #empresa h2 {
+        font-size: 1.8rem;
+    }
+
+    .contenedor-mapa {
+        height: 200px;
+    }
 }
