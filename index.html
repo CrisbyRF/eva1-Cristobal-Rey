@@ -15,69 +15,102 @@
 
 <body>
 
-    <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Huerto Feliz</a>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg bg-light barra-navegacion">
+        <div class="container-fluid cont-nav">
+            <a class="navbar-brand marca-nav" href="#">Huerto Feliz</a>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav lista-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
+                        <a class="nav-link enlace-nav" href="#servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#historia">Historia</a>
+                        <a class="nav-link enlace-nav" href="#historia">Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#empresa">Empresa</a>
+                        <a class="nav-link enlace-nav" href="#empresa">Empresa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link enlace-nav" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Encabezado Principal -->
-    <header class="container text-center mt-5 mb-5">
+    <!-- Encabezado principal -->
+    <header class="container text-center mt-5 mb-5 encabezado-principal">
         <h1>Bienvenidos a Huerto Feliz</h1>
         <p>Expertos en jardinería y cuidado de áreas verdes.</p>
     </header>
 
-    <!-- Sección Servicios con Carrusel -->
-    <section id="servicios" class="container mb-5">
+    <!-- Sección servicios con carrusel -->
+    <section id="servicios" class="container mb-5 seccion-servicios">
         <h2>Nuestros Servicios</h2>
 
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <!-- Servicio 1 -->
                 <div class="carousel-item active">
-                    <!-- imagen del servicio 1 -->
-                    <img src="..." class="d-block w-100" alt="Corte de pasto">
-                    <div class="carousel-caption d-none d-md-block text-dark bg-light opacity-75">
+                    <img src="imágenes/servicios/corte-de-pasto.jpg" class="d-block w-100 img-carrusel"
+                        alt="Corte de pasto">
+                    <div class="carousel-caption caja-texto-carrusel">
                         <h3>Corte de pasto</h3>
-                        <p>Mantenemos su jardín con el pasto a la altura ideal y en perfectas condiciones.</p>
-                        <p>Precio base: $15.000 (puede variar según el tamaño).</p>
+                        <div class="contenedor-info-servicio">
+                            <div class="info-principal">
+                                <p>Mantenemos su jardín con el pasto a la altura ideal y en perfectas condiciones.</p>
+                                <div class="precio-servicio">
+                                    <span class="monto">$15.000</span>
+                                    <span class="nota-precio">(puede variar según lo que se requiera).</span>
+                                </div>
+                            </div>
+                            <div class="resena-carrusel">
+                                <p>"Puntuales y rápidos. El pasto quedó como una alfombra. Superó mis expectativas."</p>
+                                <span>- Pedro D.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Servicio 2 -->
                 <div class="carousel-item">
-                    <!-- imagen del servicio 2 -->
-                    <img src="..." class="d-block w-100" alt="Poda de árboles">
-                    <div class="carousel-caption d-none d-md-block text-dark bg-light opacity-75">
+                    <img src="imágenes/servicios/poda-de-arboles.jpg" class="d-block w-100 img-carrusel"
+                        alt="Poda de árboles">
+                    <div class="carousel-caption caja-texto-carrusel">
                         <h3>Poda de árboles</h3>
-                        <p>Poda estética y sanitaria de árboles para mantenerlos saludables.</p>
-                        <p>Precio base: $30.000 (puede variar según la altura).</p>
+                        <div class="contenedor-info-servicio">
+                            <div class="info-principal">
+                                <p>Poda estética y sanitaria de árboles para mantenerlos saludables.</p>
+                                <div class="precio-servicio">
+                                    <span class="monto">$30.000</span>
+                                    <span class="nota-precio">(puede variar según lo que se requiera).</span>
+                                </div>
+                            </div>
+                            <div class="resena-carrusel">
+                                <p>"La poda fue impecable y muy profesional. Cuidaron mucho mi jardín."</p>
+                                <span>- Juan Pérez</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Servicio 3 -->
                 <div class="carousel-item">
-                    <!-- imagen del servicio 3 -->
-                    <img src="..." class="d-block w-100" alt="Jardinería en general">
-                    <div class="carousel-caption d-none d-md-block text-dark bg-light opacity-75">
+                    <img src="imágenes/servicios/jardineria-general.jpg" class="d-block w-100 img-carrusel"
+                        alt="Jardinería en general">
+                    <div class="carousel-caption caja-texto-carrusel">
                         <h3>Jardinería en general</h3>
-                        <p>Diseño y mantención de flores, arbustos y plantas en general.</p>
-                        <p>Precio base: $25.000 (puede variar según requerimiento).</p>
+                        <div class="contenedor-info-servicio">
+                            <div class="info-principal">
+                                <p>Diseño y mantención de flores, arbustos y plantas en general.</p>
+                                <div class="precio-servicio">
+                                    <span class="monto">$25.000</span>
+                                    <span class="nota-precio">(puede variar según lo que se requiera).</span>
+                                </div>
+                            </div>
+                            <div class="resena-carrusel">
+                                <p>"Transformaron por completo mi espacio verde. Muy dedicados y creativos."</p>
+                                <span>- Ana Rojas</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,19 +125,19 @@
         </div>
     </section>
 
-    <section id="historia" class="container mb-5">
+    <section id="historia" class="container mb-5 seccion-historia">
         <h2>Nuestra Historia</h2>
         <p>Llevamos más de 10 años en el mercado entregando el mejor servicio de jardinería, cuidando el medio ambiente
             y embelleciendo los hogares de nuestros clientes.</p>
 
         <!-- falta la imágen -->
-        <img src="..." alt="Historia de la empresa">
+        <img src="imágenes/historia-empresa.png" alt="Historia de la empresa" class="img-historia">
 
         <h3 class="mt-4">Testimonios de nuestros clientes</h3>
         <div class="row">
             <!-- Testimonio 1 -->
             <div class="col-md-4">
-                <div class="card">
+                <div class="card tarjeta-testimonio">
                     <div class="card-body">
                         <h4 class="card-title">María González</h4>
                         <p class="card-text">"Excelente servicio, muy puntuales y dejaron mi jardín hermoso. Totalmente
@@ -114,7 +147,7 @@
             </div>
             <!-- Testimonio 2 -->
             <div class="col-md-4">
-                <div class="card">
+                <div class="card tarjeta-testimonio">
                     <div class="card-body">
                         <h4 class="card-title">Juan Pérez</h4>
                         <p class="card-text">"La poda de mis árboles fue impecable. Muy profesionales y cuidadosos."</p>
@@ -123,7 +156,7 @@
             </div>
             <!-- Testimonio 3 -->
             <div class="col-md-4">
-                <div class="card">
+                <div class="card tarjeta-testimonio">
                     <div class="card-body">
                         <h4 class="card-title">Ana Rojas</h4>
                         <p class="card-text">"Llevan meses manteniendo mi jardín y siempre está precioso. Son de mucha
@@ -135,7 +168,7 @@
     </section>
 
     <!-- Sección de la empresa -->
-    <section id="empresa" class="container mb-5">
+    <section id="empresa" class="container mb-5 seccion-empresa">
         <h2>Nuestra Empresa</h2>
 
         <h3>Misión</h3>
@@ -144,58 +177,67 @@
 
         <h3>Valores</h3>
         <ul>
-            <li>Responsabilidad</li>
             <li>Compromiso con el medio ambiente</li>
             <li>Calidad de servicio</li>
         </ul>
 
         <div class="row mt-4 g-4">
             <div class="col-md-6">
-                <img src="imágenes/imagen-1-empresa.jpg" alt="Imagen de la empresa 1" class="img-fluid">
+                <img src="imágenes/imagen-1-empresa.jpg" alt="Imagen de la empresa 1" class="img-fluid img-empresa">
             </div>
             <div class="col-md-6">
-                <img src="imágenes/imagen-2-empresa.jpeg" alt="Imagen de la empresa 2" class="img-fluid">
+                <img src="imágenes/imagen-2-empresa.jpeg" alt="Imagen de la empresa 2" class="img-fluid img-empresa">
             </div>
         </div>
 
-        <h3 class="mt-4">Dónde nos encontramos</h3>
-        <p>Pedro Aguirre Cerda 6969, Valdivia, Chile.</p>
-        <p><strong>Cómo llegar:</strong> Nos encontramos en la avenida principal Pedro Aguirre Cerda.</p>
+        <div class="row align-items-center mt-5">
+            <!-- Columna de Texto -->
+            <div class="col-lg-6 order-2 order-lg-1 mt-4 mt-lg-0">
+                <h3 class="mt-0">Dónde nos encontramos</h3>
+                <p>Pedro Aguirre Cerda 6969, Valdivia, Chile.</p>
+                <p><strong>Cómo llegar:</strong> Nos encontramos en la avenida principal Pedro Aguirre Cerda.</p>
 
-        <!-- mapa de la ubicacion -->
-        <div class="contenedor-mapa">Aquí va el mapa</div>
-
-        <h3 class="mt-4">Datos de Contacto</h3>
-        <p>Teléfonos: +56 9 1234 5678 / +56 2 9876 5432</p>
-        <p>Correo: contacto@huertofeliz.cl</p>
+                <h3 class="mt-4">Datos de Contacto</h3>
+                <p>Teléfonos: +56 9 1234 5678 / +56 2 9876 5432</p>
+                <p>Correo: contacto@huertofeliz.cl</p>
+            </div>
+            <!-- Columna del Mapa -->
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="contenedor-mapa m-0" data-bs-toggle="modal" data-bs-target="#modalMapa"
+                    title="Ver mapa en grande">
+                    <img src="imágenes/ubicacion.png" alt="Haz click para ver el mapa en grande" />
+                    <div class="capa-ampliar"><span class="simbolo-lupa">Ampliar mapa</span></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Sección del formulario -->
-    <section id="contacto" class="container mb-5">
+    <section id="contacto" class="container mb-5 seccion-contacto">
         <h2>Contáctanos</h2>
-        <form>
+        <form class="formulario-contacto">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" required>
+                <input type="text" class="form-control entrada-formulario" id="nombre" required>
             </div>
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="correo" required>
+                <input type="email" class="form-control entrada-formulario" id="correo" required>
             </div>
             <div class="mb-3">
                 <label for="telefono" class="form-label">Teléfono de contacto</label>
-                <input type="tel" class="form-control" id="telefono" required>
+                <input type="tel" class="form-control entrada-formulario" id="telefono" required>
             </div>
             <div class="mb-3">
                 <label for="consulta" class="form-label">Consulta</label>
-                <textarea class="form-control" id="consulta" rows="3" required></textarea>
+                <textarea class="form-control entrada-formulario" id="consulta" rows="3" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn boton-principal">Enviar</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-4 mt-5">
+    <footer class="text-center py-4 pie-pagina mt-5">
         <p>Teléfono de la empresa: +56 9 1234 5678</p>
         <p>Redes Sociales:</p>
         <ul class="list-inline">
@@ -206,6 +248,22 @@
         <hr>
         <p>Desarrollado por: Cristóbal Rey 2026</p>
     </footer>
+
+    <div class="modal fade" id="modalMapa" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white"
+                        style="filter: invert(1) grayscale(100%) brightness(200%);" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center p-0 mt-2">
+                    <img src="imágenes/ubicacion.png" alt="Mapa ampliado"
+                        class="img-fluid rounded-3 shadow-lg border border-white border-2">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Script de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
